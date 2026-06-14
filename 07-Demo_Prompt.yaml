@@ -1,0 +1,15 @@
+- name: Demo on Prompt
+  hosts: frontend
+  vars_propmpt:
+   - name: username
+     prompt: "please enter Username"
+     private: false
+
+   - name: password
+     prompt: "Please enter Password"
+     private: true
+
+  tasks:
+  - name: Print information
+    debug: 
+      msg: "Username is: {{ username }}, password is: {{ password }}"
