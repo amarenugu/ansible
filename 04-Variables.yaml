@@ -1,8 +1,5 @@
 - name: Demo on Variables
   hosts: frontend
-
-  hosts: backend
-  connection: localhost
   
   vars:
     COURSE: DevOps
