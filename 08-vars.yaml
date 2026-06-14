@@ -4,4 +4,4 @@
   tasks: 
   - name: Print information
     debug:
-      msg: "Printing from 08-vars.yaml, the course is {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}, commone_key {{ commone_key }}"
+      msg: "Printing from 08-vars.yaml, the course is {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}, common_key {{ common_key }}"
