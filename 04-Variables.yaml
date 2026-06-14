@@ -1,0 +1,11 @@
+- name: Variables
+  vars:
+    COURSE: DevOps
+    TRAINER: Siva Kumar
+    DURATION: 4MONTHS
+
+- name: Print
+  task:
+    debug:
+      msg: "Iam learving {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
+      
