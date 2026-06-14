@@ -1,0 +1,7 @@
+- name: Demo on inventory Variables
+  hosts: frontend
+
+  tasks: 
+  - name: Print information
+    debug:
+      msg: "Printing from 08-vars.yaml, the course is {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}"
