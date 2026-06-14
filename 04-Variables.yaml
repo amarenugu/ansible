@@ -1,6 +1,5 @@
 - name: Demo on Variables
-  hosts: localhost
-  
+    
   vars:
     COURSE: DevOps
     TRAINER: Siva Kumar
