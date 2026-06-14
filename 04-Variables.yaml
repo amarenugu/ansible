@@ -10,6 +10,6 @@
     DURATION: 4MONTHS
 
   tasks:
-  - debug:
+    - debug:
       msg: "Iam learning {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
       
