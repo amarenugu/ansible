@@ -4,8 +4,7 @@
     TRAINER: Siva Kumar
     DURATION: 4MONTHS
 
-- name: Print
-  task:
+  tasks:
     debug:
-      msg: "Iam learving {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
+      msg: "Iam learning {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
       
