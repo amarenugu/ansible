@@ -1,6 +1,6 @@
 - name: Demo on Prompt
   hosts: frontend
-  vars_propmpt:
+  vars_prompt:
    - name: username
      prompt: "please enter Username"
      private: false
