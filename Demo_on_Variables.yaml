@@ -1,0 +1,11 @@
+- name : Demo on Variables
+  hosts: frontend
+
+  vars_files:
+    - course.yaml
+    tasks:
+    - name: Print Variables information
+      debug:
+        msg: "I am learning {{ COURSE }}, Trainer is {{ TRAINER }} and the duration is about {{ DURATION}} And trainer Fullname is {{ FULLNAME}}"
+
+  
