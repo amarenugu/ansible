@@ -11,5 +11,5 @@
 
   tasks:
     - debug:
-      msg: "Iam learning {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
+        msg: "Iam learning {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
       
