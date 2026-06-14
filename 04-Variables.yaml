@@ -1,10 +1,12 @@
-- name: Variables
+- name: Demo on Variables
+  hosts: localhost
+  connection: local
   vars:
     COURSE: DevOps
     TRAINER: Siva Kumar
     DURATION: 4MONTHS
 
   tasks:
-    debug:
+  - debug:
       msg: "Iam learning {{ COURSE }} From {{ TRAINER }}, and duration is about {{ DURATION}}"
       
