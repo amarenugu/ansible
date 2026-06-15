@@ -2,5 +2,5 @@
   hosts: frontend
   tasks:
   - name: Print name
-      debug:
+    debug:
         msg: "Hello {{ name }}"
