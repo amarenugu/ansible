@@ -1,6 +1,6 @@
 - name: Demo on command line argument
   hosts: frontend
-    tasks:
+  tasks:
     - name: Print name
       debug:
         msg: "Hello {{ name }}"
