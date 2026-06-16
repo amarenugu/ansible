@@ -22,12 +22,12 @@
 #             more_details: {{ more_details }}
 
 
-    tasks:
-        - name: print information
-          debug:
-            msg: |
-              name: {{ course }}
-              duration: {{ Duration }}
-              Session_Live: {{ Session_Live }}
-              Topics: {{ Topics }}
-              more_details: {{ more_details }}
+  tasks:
+    - name: print information
+      debug:
+        msg: |
+          name: {{ course }}
+          duration: {{ Duration }}
+          Session_Live: {{ Session_Live }}
+          Topics: {{ Topics }}
+          more_details: {{ more_details }}
