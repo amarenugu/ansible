@@ -11,11 +11,12 @@
     more_details: #map
         months: "5"
         trainer: "Shiva"
-    tasks:
+  tasks:
     - name: print information
-      msg: |
-        name: {{ course }}
-        duration: {{ Duration }}
-        Session_Live: {{ Session_Live }}
-        Topics: {{ Topics }}
-        more_details: {{ more_details }}
+      debug:
+        msg: |
+            name: {{ course }}
+            duration: {{ Duration }}
+            Session_Live: {{ Session_Live }}
+            Topics: {{ Topics }}
+            more_details: {{ more_details }}
