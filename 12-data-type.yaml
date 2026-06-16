@@ -24,8 +24,8 @@
 
     tasks:
         - name: print information
-        ansible.builtin.debug:
-            msg: |
+          ansible.builtin.debug:
+            msg: 
               - "name: {{ course }}"
               - "duration: {{ Duration }}"
               - "Session_Live: {{ Session_Live }}"
