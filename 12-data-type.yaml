@@ -1,0 +1,21 @@
+- name: course information
+  hosts: frontend
+  vars:
+    course: "DevOps with AIOps" #String
+    Duration: 150 # Integer/Number
+    Session_Live: true #Boolean
+    Topics: #List
+    - linux
+    - shell
+    - ansible
+    more_details: #map
+        months: "5"
+        trainer: "Shiva"
+    tasks:
+    - name: print information
+      msg: |
+        name: {{ course }}
+        duration: {{ Duration }}
+        Session_Live: {{ Session_Live }}
+        Topics: {{ Topics }}
+        more_details: {{ more_details }}
