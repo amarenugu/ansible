@@ -1,5 +1,6 @@
 - name: Check Number of live sessions
-  hosts: frontend
+  hosts: local
+  connection: local
   vars:
     live_sessions: 4
   tasks:
