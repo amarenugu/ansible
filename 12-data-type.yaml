@@ -11,12 +11,23 @@
     more_details: #map
         months: "5"
         trainer: "Shiva"
-  tasks:
-    - name: print information
-      debug:
-        msg: |
-            name: {{ course }}
-            duration: {{ Duration }}
-            Session_Live: {{ Session_Live }}
-            Topics: {{ Topics }}
-            more_details: {{ more_details }}
+#   tasks:
+#     - name: print information
+#       debug:
+#         msg: |
+#             name: {{ course }}
+#             duration: {{ Duration }}
+#             Session_Live: {{ Session_Live }}
+#             Topics: {{ Topics }}
+#             more_details: {{ more_details }}
+
+
+    tasks:
+        - name: print information
+        ansible.builtin.debug:
+            msg: |
+              - "name: {{ course }}"
+              - "duration: {{ Duration }}"
+              - "Session_Live: {{ Session_Live }}"
+              - "Topics: {{ Topics }}"
+              - "more_details: {{ more_details }}"
