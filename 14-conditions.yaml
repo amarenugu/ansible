@@ -1,7 +1,7 @@
 - name: test even or odd
   hosts: frontend
   vars:
-    given_number: 9
+    given_number: 500
   tasks:
   - when: given_number % 2 == 0
     debug:
