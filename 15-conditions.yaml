@@ -1,4 +1,4 @@
-- name: conditions using ansible_facts
+- name: conditions using ansible facts
   hosts: frontend
 
   tasks:
