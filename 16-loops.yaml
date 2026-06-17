@@ -1,0 +1,11 @@
+- name: Loop test
+  hosts: frontend
+
+  tasks:
+  - name: print names
+    debug
+      msg: "Hi {{ item }}"
+    loop:
+    - Amar
+    - Suri
+    - Satta
