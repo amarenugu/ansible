@@ -1,0 +1,13 @@
+- name: demo on shell vs command
+  hosts: frontend
+  tasks:
+  - name: command test
+    command: cat /etc/password | grep root
+    register: users_output
+
+  - name: print output 
+    debug:
+      msg: " {{ users_output }}" 
+ 
+  - name: list files 
+    command: ls -lrt > /tmp/files.txt
