@@ -12,4 +12,4 @@
  
   - name: list files 
     #command: ls -lrt > /tmp/files.txt
-    shell: ls -lrt > /tmp/files.txt
+    shell: ls -l > /tmp/files.txt
