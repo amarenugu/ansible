@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name: command test
-    command: cat /etc/password | grep root
+    command: cat /etc/passwd | grep root
     register: users_output
 
   - name: print output 
