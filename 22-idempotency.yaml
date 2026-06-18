@@ -1,0 +1,7 @@
+- name: test on idempotency
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: create expense user 
+    user:
+      name: expense #useradd expense
