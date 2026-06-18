@@ -1,0 +1,12 @@
+- name : Install multiple packages
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install packages
+    package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - { name: "nginx", state: "present" }
+    - { name: "mysql", state: "absent" }
+    - { name: "zip", state: "present" }
