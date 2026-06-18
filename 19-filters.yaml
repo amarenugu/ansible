@@ -6,7 +6,7 @@
       name: ansible
       project: roboshop
       environment: dev
-    full_name: Amarender Enugu
+    full_name: AmaRenDer EnUgU
     ip_address: 44.222.143.9
     tagsList: [
         {
@@ -48,3 +48,7 @@
   - name: convert full_name to UPPER case
     debug:
       msg: "{{ full_name | upper }}"
+
+  - name: convert full_name to lower case 
+    debug:
+      msg: "{{ full_name | lower }}"
