@@ -1,0 +1,38 @@
+- name: Demo on Filters
+  hosts: frontend
+  vars:
+    topics: Linux, Shell, Ansible, Terraform
+    tagMap:
+      name: ansible
+      project: roboshop
+      environment: dev
+    full_name: Amarender Enugu
+    ip_address: 44.222.143.9
+    tagsList: [
+        {
+            "key" : "name",
+            "value" : "ansible"
+        },
+
+        {
+            "key" : "project",
+            "value" : "roboshop"
+
+        },
+
+        {
+            "key" : "environment",
+            "value" : "dev"
+
+        }
+
+    ]
+
+  tasks:
+  - name: convert string to list 
+    debug:
+      msg: "Topics are: {{ topics | split(',')}}"
+  
+  - name: set default value 
+    debug:
+      msg: " Hi {{ GREETING | default('Good Morning')}}"
