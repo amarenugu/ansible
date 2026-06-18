@@ -7,7 +7,7 @@
       name: "{{ item }}"
       state: present
     loop:
-    - ngnix
+    - nginx
     - mysql
-    - mongodb-mongosh
+    - mongodb
     - git
