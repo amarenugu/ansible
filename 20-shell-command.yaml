@@ -11,4 +11,5 @@
       msg: " {{ users_output }}" 
  
   - name: list files 
-    command: ls -lrt > /tmp/files.txt
+    #command: ls -lrt > /tmp/files.txt
+    shell: ls -lrt > /tmp/files.txt
