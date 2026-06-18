@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name: Install packages
-    packages:
+    package:
       name: "{{ item }}"
       state: present
     loop:
@@ -10,4 +10,3 @@
     - mysql
     - mongodb-mongosh
     - git
-    
