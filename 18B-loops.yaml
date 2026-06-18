@@ -1,0 +1,12 @@
+- name : Remove all packages
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: remove packages 
+    package:
+      name: "{{ item.name }}"
+      state: "{{ item.state}}"
+    loop:
+    - { name: "nginx", state: "absent" }
+    - { name: "mysql", state: "absent" }
+    - { name: "zip", state: "absent" }
