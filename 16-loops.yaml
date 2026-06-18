@@ -1,9 +1,8 @@
 - name: Loop test
   hosts: frontend
-
   tasks:
   - name: print names
-    debug
+    debug:
       msg: "Hi {{ item }}"
     loop:
     - Amar
