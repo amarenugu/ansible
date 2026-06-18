@@ -12,4 +12,9 @@
  
   - name: list files 
     #command: ls -lrt > /tmp/files.txt
-    shell: ls -l /tmp/files.txt
+    shell: ls -l > /tmp/files.txt
+    register: list_output
+
+  - name: print output 
+    debug:
+      msg: " {{ list_output }}"
